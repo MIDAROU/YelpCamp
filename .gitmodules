@@ -1,0 +1,3 @@
+[submodule "YelpCampClient"]
+	path = YelpCampClient
+	url = https://github.com/MIDAROU/YelpCampClient
