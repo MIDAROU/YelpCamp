@@ -40,7 +40,7 @@ function App() {
 				}
 			>
 				<Navbar />
-				<AnimatePresence exitBeforeEnter>
+				<AnimatePresence mode="wait">
 					<Routes key={location.pathname}>
 						<Route path="/" element={<Home />} />
 						<Route path="/Campgrounds" element={<Campgrounds />} />

@@ -6,7 +6,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReactMapGl, { FlyToInterpolator, Marker } from "react-map-gl";
 import { motion } from "framer-motion";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
 	addCampgrounds,
@@ -81,7 +81,7 @@ function AddCampground() {
 		});
 	};
 
-	const handleSearchDebounce = useCallback(debounce(HandleSearch), []);
+	const handleSearchDebounce = useMemo(() => debounce(HandleSearch), []);
 
 	return (
 		<motion.main
