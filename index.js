@@ -17,7 +17,6 @@ ConnectDB();
 app.use(express.json());
 
 //check if in production then serve the client build
-
 if (process.env.NODE_ENV === "production") {
 	app.use(express.static("client/build"));
 }
