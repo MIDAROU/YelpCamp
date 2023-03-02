@@ -8,13 +8,19 @@ const CommentsRoutes = require("./Routes/Comments");
 const CampgroundsRoutes = require("./Routes/Campgrounds");
 
 //PORT
-const PORT = 5050;
+const PORT = process.env.PORT || 5050;
 
 //CONNECT TO DATABASE
 ConnectDB();
 
 //Routes middleware
 app.use(express.json());
+
+//check if in production then serve the client build
+
+if (process.env.NODE_ENV === "production") {
+	app.use(express.static("client/build"));
+}
 
 //Routes
 app.use("/api/users", UsersRoutes);
