@@ -5,8 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js",
-		"dev": "concurrently \"nodemon index.js\" \"cd client && npm start\"",
-		"build": "cd client && npm run build"
+		"dev": "concurrently \"nodemon index.js\" \"cd client && npm start\""
 	},
 	"repository": {
 		"type": "git",
@@ -19,6 +18,7 @@
 	},
 	"homepage": "https://github.com/MIDAROU/YelpCamp#readme",
 	"dependencies": {
+		"bcrypt": "^5.1.0",
 		"body-parser": "^1.20.2",
 		"dotenv": "^16.0.3",
 		"express": "^4.18.2",
