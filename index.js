@@ -2,7 +2,6 @@
 const express = require("express");
 const ConnectDB = require("./Config/Database");
 const app = express();
-const path = path();
 
 const UsersRoutes = require("./Routes/Users");
 const CommentsRoutes = require("./Routes/Comments");
