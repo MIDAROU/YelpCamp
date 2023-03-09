@@ -31,7 +31,7 @@ APP BACKGROUNDS
 */
 
 .Home {
-	background: url("../../public/Images/HomeBackground.jpg");
+	background: url("%PUBLIC_URL%/Images/HomeBackground.jpg");
 	background-size: cover;
 	background-position: center;
 	min-height: 100vh;
